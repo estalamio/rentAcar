@@ -1,0 +1,74 @@
+ if (dtpDatumVracanja.Value > nadjenePonude[lstNarudzbine.SelectedIndex].DatumDo)
+            {
+                MessageBox.Show("Datum vracanja ne sme da bude veci od nase ponude!");
+            }
+            if (dtpDatumPreuzimanja.Value < nadjenePonude[lstNarudzbine.SelectedIndex].DatumOd){
+                MessageBox.Show("Datum preuzimanja ne sme da bude raniji od nase ponude!");
+            }
+            int krajnjaCena = brDana * nadjenePonude[lstNarudzbine.SelectedIndex].Cena;
+
+
+
+            Ponuda p = listaPonuda[lstNarudzbine.SelectedIndex];
+
+            Ponuda p1 = new Ponuda(p.IdAuta, p.DatumOd, dtpDatumPreuzimanja.Value.Date.AddDays(-1), p.Cena);
+            Ponuda p2 = new Ponuda(p.IdAuta, dtpDatumVracanja.Value.Date.AddDays(1), p.DatumDo, p.Cena);
+
+            if ((dtpDatumPreuzimanja.Value.Date - p.DatumOd).TotalDays > 0)
+                ponude.Add(p1);
+            if ((p.DatumDo - dtpDatumVracanja.Value.Date).TotalDays > 0)
+                ponude.Add(p2);
+            ponude.Remove(p);
+
+            if (File.Exists(ponudeFajl))
+            {
+                BinaryFormatter bf1 = new BinaryFormatter();
+                FileStream fs1= new FileStream(ponudeFajl, FileMode.Open, FileAccess.Write, FileShare.ReadWrite);
+
+
+                bf.Serialize(fs1, ponude);
+
+                fs1.Flush();
+                fs1.Dispose();
+                fs1.Close();
+               
+            }
+
+
+            Rezervacija r = new Rezervacija(p.IdAuta, idKupca, dtpDatumPreuzimanja.Value, dtpDatumVracanja.Value, int.Parse(txtCenaRezervacije.Text));
+            listaRezervacija.Add(r);
+           
+            
+            if (File.Exists(rezervacijeFajl))
+            {
+                bf = new BinaryFormatter();
+                fs = new FileStream(rezervacijeFajl, FileMode.Open, FileAccess.Write, FileShare.ReadWrite);
+
+                listaRezervacija.Add(r);
+                bf.Serialize(fs,listaRezervacija);
+
+                MessageBox.Show("Uspesno snimljena rezervacija");
+                fs.Flush();
+                fs.Close();
+                fs.Dispose();
+
+                Form rezervisanaAuta = new frmRezervisanaAuta();
+                rezervisanaAuta.Show();
+            }
+            else
+            {
+                bf = new BinaryFormatter();
+                fs = new FileStream(rezervacijeFajl, FileMode.Create, FileAccess.Write, FileShare.ReadWrite);
+
+                listaRezervacija.Add(r);
+                bf.Serialize(fs, listaRezervacija);
+
+                MessageBox.Show("Uspesno snimljena rezervacija");
+                fs.Flush();
+                fs.Close();
+                fs.Dispose();
+
+                Form rezervisanaAuta= new frmRezervisanaAuta();
+                rezervisanaAuta.Show();
+            }
+            nadjenePonude.Clear();

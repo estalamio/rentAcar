@@ -1,0 +1,98 @@
+ public void PrikazModela(object sender, EventArgs e)
+        {
+            Boolean uslov = true;
+            object m = cbMarka.SelectedItem;
+            string marka = m as string;
+
+            object mo = cbModel.SelectedItem;
+            string model = mo as string;
+
+            int modelIndex = cbModel.SelectedIndex;
+
+            Boolean flagBrVrata = false;
+            Boolean flagGodiste = false;
+            Boolean flagKubikaza = false;
+            Boolean flagKaroserija = false;
+            Boolean flagGorivo = false;
+            Boolean flagPogon = false;
+            Boolean flagMenjac = false;
+
+            cbGodiste.Items.Clear();
+            cbKubikaza.Items.Clear();
+            cbKaroserija.Items.Clear();
+            cbBrVrata.Items.Clear();
+            cbGorivo.Items.Clear();
+            cbPogon.Items.Clear();
+            cbMenjac.Items.Clear();
+
+            for (int i = 0; i < listaDostupnihPonuda.Count; i++)
+            {
+                if (listaDostupnihPonuda[i].Marka == marka && listaDostupnihPonuda[i].Model.Equals(model))
+                {
+                    for (int j = i + 1; j < listaDostupnihPonuda.Count; j++)
+                    {
+                        /*   if (lista[i].Model == lista[j].Model && lista[i].Marka == lista[j].Marka)
+                           {
+                               flagNadjen = true;
+                           }*/
+                        if (listaDostupnihPonuda[i].Model == listaDostupnihPonuda[j].Model)
+                        {
+                            if (listaDostupnihPonuda[i].Godiste == listaDostupnihPonuda[j].Godiste) { flagGodiste = true; }
+                            //if (lista[i].Kubikaza == lista[j].Kubikaza) { flagKubikaza = true; }
+                            // if (lista[i].Karoserija == lista[j].Karoserija) { flagKaroserija = true; }
+                            //  if (lista[i].BrojVrata == lista[j].BrojVrata) { flagBrVrata = true; }
+                            //  if (lista[i].Gorivo == lista[j].Gorivo) { flagGorivo = true; }
+                            //  if (lista[i].Pogon == lista[j].Pogon) { flagPogon = true; }
+                            //  if (lista[i].VrstaMenjaca == lista[j].VrstaMenjaca) { flagMenjac = true; }
+                        }
+                    }
+
+                    if (flagGodiste == true)
+                    {
+
+                        cbGodiste.Items.Add(listaDostupnihPonuda[i].Godiste);
+
+
+                    }
+                    /*   if (flagKubikaza == false) {
+                          // cbKubikaza.Items.Clear();
+                           cbKubikaza.Items.Add(lista[i].Kubikaza);
+
+                       }
+                       if (flagKaroserija == false) {
+                         //  cbKaroserija.Items.Clear();
+                           cbKaroserija.Items.Add(lista[i].Karoserija);
+
+                       }
+                       if (flagBrVrata == false) {
+                          // cbBrVrata.Items.Clear();
+                           cbBrVrata.Items.Add(lista[i].BrojVrata);
+
+                       }
+
+                       if (flagGorivo == false) {
+                         //  cbGorivo.Items.Clear();
+                           cbGorivo.Items.Add(lista[i].Gorivo);
+
+                       }
+                       if (flagPogon == false) {
+                          // cbPogon.Items.Clear();
+                           cbPogon.Items.Add(lista[i].Pogon);
+
+                       }
+                       if (flagMenjac == false) {
+                          // cbMenjac.Items.Clear();
+                           cbMenjac.Items.Add(lista[i].VrstaMenjaca);
+
+                       }
+                       */
+                }
+
+                cbModel.Enabled = false;
+
+            }
+
+
+
+            flagGodiste = flagKubikaza = flagKaroserija = flagBrVrata = flagGorivo = flagPogon = flagMenjac = false;
+        }

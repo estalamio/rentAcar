@@ -1,0 +1,16 @@
+C:\Users\User\Google Drive (mihajilomrsevic@gmail.com)\Druga godina\Vezbe\Cetvrti semestar\TVP\Projekat 1\Projekat_1\Projekat_1\bin\Debug\Projekat_1.exe.config
+C:\Users\User\Google Drive (mihajilomrsevic@gmail.com)\Druga godina\Vezbe\Cetvrti semestar\TVP\Projekat 1\Projekat_1\Projekat_1\bin\Debug\Projekat_1.exe
+C:\Users\User\Google Drive (mihajilomrsevic@gmail.com)\Druga godina\Vezbe\Cetvrti semestar\TVP\Projekat 1\Projekat_1\Projekat_1\bin\Debug\Projekat_1.pdb
+C:\Users\User\Google Drive (mihajilomrsevic@gmail.com)\Druga godina\Vezbe\Cetvrti semestar\TVP\Projekat 1\Projekat_1\Projekat_1\obj\Debug\Projekat_1.csprojAssemblyReference.cache
+C:\Users\User\Google Drive (mihajilomrsevic@gmail.com)\Druga godina\Vezbe\Cetvrti semestar\TVP\Projekat 1\Projekat_1\Projekat_1\obj\Debug\Projekat_1.Form1.resources
+C:\Users\User\Google Drive (mihajilomrsevic@gmail.com)\Druga godina\Vezbe\Cetvrti semestar\TVP\Projekat 1\Projekat_1\Projekat_1\obj\Debug\Projekat_1.frmDobrodoslice.resources
+C:\Users\User\Google Drive (mihajilomrsevic@gmail.com)\Druga godina\Vezbe\Cetvrti semestar\TVP\Projekat 1\Projekat_1\Projekat_1\obj\Debug\Projekat_1.frmLoginAdmina.resources
+C:\Users\User\Google Drive (mihajilomrsevic@gmail.com)\Druga godina\Vezbe\Cetvrti semestar\TVP\Projekat 1\Projekat_1\Projekat_1\obj\Debug\Projekat_1.frmRezervacija.resources
+C:\Users\User\Google Drive (mihajilomrsevic@gmail.com)\Druga godina\Vezbe\Cetvrti semestar\TVP\Projekat 1\Projekat_1\Projekat_1\obj\Debug\Projekat_1.frmLoginKupca.resources
+C:\Users\User\Google Drive (mihajilomrsevic@gmail.com)\Druga godina\Vezbe\Cetvrti semestar\TVP\Projekat 1\Projekat_1\Projekat_1\obj\Debug\Projekat_1.frmRezervisanaAuta.resources
+C:\Users\User\Google Drive (mihajilomrsevic@gmail.com)\Druga godina\Vezbe\Cetvrti semestar\TVP\Projekat 1\Projekat_1\Projekat_1\obj\Debug\Projekat_1.Properties.Resources.resources
+C:\Users\User\Google Drive (mihajilomrsevic@gmail.com)\Druga godina\Vezbe\Cetvrti semestar\TVP\Projekat 1\Projekat_1\Projekat_1\obj\Debug\Projekat_1.csproj.GenerateResource.cache
+C:\Users\User\Google Drive (mihajilomrsevic@gmail.com)\Druga godina\Vezbe\Cetvrti semestar\TVP\Projekat 1\Projekat_1\Projekat_1\obj\Debug\Projekat_1.csproj.CoreCompileInputs.cache
+C:\Users\User\Google Drive (mihajilomrsevic@gmail.com)\Druga godina\Vezbe\Cetvrti semestar\TVP\Projekat 1\Projekat_1\Projekat_1\obj\Debug\Projekat_1.exe
+C:\Users\User\Google Drive (mihajilomrsevic@gmail.com)\Druga godina\Vezbe\Cetvrti semestar\TVP\Projekat 1\Projekat_1\Projekat_1\obj\Debug\Projekat_1.pdb
+C:\Users\User\Google Drive (mihajilomrsevic@gmail.com)\Druga godina\Vezbe\Cetvrti semestar\TVP\Projekat 1\Projekat_1\Projekat_1\obj\Debug\Projekat_1.frmAdmin.resources
